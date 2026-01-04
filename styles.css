@@ -1,0 +1,401 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* CSS Variables for consistent theming */
+:root {
+  --primary-bg: #1a1a1a;
+  --secondary-bg: #2a2a2a;
+  --text-color: #f5f5f5;
+  --accent-color: #ff6b6b;
+  --hover-color: #ff5252;
+  --border-color: #404040;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --transition: all 0.3s ease;
+}
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, var(--accent-color), var(--hover-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a,
+nav button {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover,
+nav button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+footer {
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid var(--border-color);
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--secondary-bg);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+label {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+input {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2);
+}
+
+button[type="submit"] {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form p {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+form p a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+form p a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+/* Masonry Layout */
+#mosaic,
+#images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+#mosaic img,
+#images-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+#mosaic img:hover,
+#images-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Image Wrapper and Delete Button */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 107, 107, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.image-wrapper:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.1);
+}
+
+/* Upload Form */
+#upload-form {
+  margin-bottom: 4rem;
+}
+
+#upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+#upload label {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+#upload input[type="file"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#upload input[type="file"]:hover {
+  border-color: var(--accent-color);
+}
+
+#upload button {
+  padding: 0.75rem 2rem;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+#upload button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+/* Public Profile */
+#public-profile h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  #mosaic,
+  #images-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a,
+  nav button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  form {
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+  }
+
+  #mosaic,
+  #images-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  #upload {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  form {
+    padding: 1.5rem 1rem;
+  }
+
+  #mosaic,
+  #images-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#mosaic img,
+#images-container img {
+  animation: fadeIn 0.5s ease-out;
+}
+
+#mosaic img:nth-child(odd),
+#images-container img:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+#mosaic img:nth-child(even),
+#images-container img:nth-child(even) {
+  animation-delay: 0.2s;
+}

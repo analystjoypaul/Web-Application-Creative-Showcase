@@ -1,0 +1,4 @@
+- [x] Modify upload functionality in script.js to prepend new images immediately without page reload or scrolling
+- [x] Update delete functionality to remove images from DOM and array without reloading the page
+- [x] Test the upload and delete features
+- [x] Remove current upload UI and replace with button in nav

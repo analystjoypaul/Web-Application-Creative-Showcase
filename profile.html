@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Showcase - Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Creative Showcase</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <button id="upload-btn">Upload</button>
+        <button id="logout-btn">Logout</button>
+      </nav>
+    </header>
+    <main>
+      <section id="user-images">
+        <h2>Your Artworks</h2>
+        <div id="images-container">
+          <!-- User's images will be displayed here -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2023 Creative Showcase. Showcasing digital memories and artwork.
+      </p>
+    </footer>
+    <input
+      type="file"
+      id="upload-input"
+      accept="image/*"
+      style="display: none"
+    />
+    <script src="script.js"></script>
+  </body>
+</html>
