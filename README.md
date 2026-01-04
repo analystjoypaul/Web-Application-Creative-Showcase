@@ -1,5 +1,5 @@
 
-# 🎨 Creative Showcase
+#  Creative Showcase
 
 ### Responsive Web Application for Showcasing Digital Artwork
 
@@ -12,21 +12,21 @@ This project was developed as part of the **Aeka Advisor Assignment** using **HT
 
 ## 🌐 Live Demo
 
-🔗 **[https://bijoy-web-app.netlify.app/](https://bijoy-web-app.netlify.app/)**
+🔗 **[https://creative-showcase-unique.netlify.app/)**
 
 ---
 
 ## 🚀 Features
 
-* 🔐 User Authentication (Sign Up & Login)
-* 👤 Private User Dashboard
-* 🖼️ Image Upload & Display
-* 📌 Masonry / Mosaic Image Layout
-* 🌍 Public User Profile Pages
-* 👁️ Show / Hide Password Toggle
-* 🌙 Dark Mode Support
-* 📱 Fully Responsive Design
-* 💾 Client-side Data Persistence using LocalStorage
+*  User Authentication (Sign Up & Login)
+*  Private User Dashboard
+*  Image Upload & Display
+*  Masonry / Mosaic Image Layout
+*  Public User Profile Pages
+*  Show / Hide Password Toggle
+*  Dark Mode Support
+*  Fully Responsive Design
+*  Client-side Data Persistence using LocalStorage
 
 ---
 
@@ -135,7 +135,7 @@ CREATIVE_SHOWCASE/
 
 ## 👤 Author
 
-**Bijoy Paul**
+**Joy Paul**
 Frontend / Full Stack Web Developer
 Project developed for **Aeka Advisor Assignment**
 
