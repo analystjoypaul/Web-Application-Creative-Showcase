@@ -12,7 +12,10 @@ This project was developed as part of the **Aeka Advisor Assignment** using **HT
 
 ## 🌐 Live Demo
 
-🔗 **[https://creative-showcase-unique.netlify.app/)**
+🔗 **[https://creative-showcase-unique.netlify.app/]**
+![Screenshot](https://github.com/analystjoypaul/Web-Application-Creative-Showcase/blob/main/Screenshot%202026-01-04%20174747.png)
+
+
 
 ---
 
